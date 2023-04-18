@@ -4,8 +4,9 @@ import pandas as pd
 import random
 
 
-EMAIL='cunhaerick88@gmail.com'
-SENHA='lmzgsgucklhlgpjp'
+EMAIL='Seu email aqui'
+#Você precisa gerar uma senha automática dentro das configurações do seu email.
+SENHA='Sua senha aqui'
 
 data=dt.datetime.now()
 hoje=(data.month, data.day)
@@ -23,7 +24,10 @@ if hoje in aniversarios:
     
     with smtplib.SMTP_SSL('smtp.gmail.com') as smtp:
         smtp.login(user=EMAIL,password=SENHA)
-        smtp.sendmail(from_addr=EMAIL, to_addrs=aniversario_pessoa['email'], msg=f'Subject: Feliz Aniversario!\n\n{carta_aniversario}')
+        smtp.sendmail(from_addr=EMAIL, 
+                      to_addrs=aniversario_pessoa['email'], 
+                      msg=f'Subject: Feliz Aniversario!\n\n{carta_aniversario}'
+                     )
 
 
 
