@@ -1,3 +1,4 @@
 name,email,year,month,day
-Erick,erick-pirata4@hotmail.com,1992,10,31
-Lelio,erick-pirata2@hotmail.com,2002,3,6
+[NOME],[EMAIL],[DATA DE NASCIMENTO(YYYY,MM,DD)]
+Ex:
+Alexandre,alexandre@hotmail.com,2002,3,6
