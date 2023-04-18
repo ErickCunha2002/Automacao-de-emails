@@ -1,0 +1,2 @@
+# EmailAut
+Automação de email.
