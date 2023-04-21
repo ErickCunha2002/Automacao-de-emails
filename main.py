@@ -26,7 +26,7 @@ if hoje in aniversarios:
         smtp.login(user=EMAIL,password=SENHA)
         smtp.sendmail(from_addr=EMAIL, 
                       to_addrs=aniversario_pessoa['email'], 
-                      msg=f'Subject: Feliz Aniversario!\n\n{carta_aniversario}'
+                      msg=f'Subject: Feliz Aniversario!!\n\n{carta_aniversario}'
                      )
 
 
