@@ -10,7 +10,7 @@ SENHA='Sua senha aqui'
 
 data=dt.datetime.now()
 hoje=(data.month, data.day)
-arquivo=pd.read_csv('Dia-33/birthdays.csv')
+arquivo=pd.read_csv('birthdays.csv')
 aniversarios={(pessoa.month, pessoa.day): pessoa for (indice, pessoa) in arquivo.iterrows()}
 
 
